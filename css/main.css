@@ -6,6 +6,7 @@
 /* body content */
 body {
   background-color: purple;
+  font-family: futura, sans-serif;
 }
 /* body content */
 
@@ -80,29 +81,108 @@ li a:hover {
   height: 100%;
   width: 100%;
   position: absolute;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 
 .profileImage  {
   top: 5%;
   right: 25%;
-  height: 30%;
+  height: 25%;
   width: 50%;
   position: absolute;
   display: flex; /* to allow contained divs to move freely*/
   background-color: white;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.24);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.24);
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.24);;
 }
 
 .profileText {
-  left: 25%;
+  left: 0;
+  right: 0;
   top: 40%;
-  height: 30%;
-  width: 50%;
+  height: 50%;
+  width: 100%;
   position: absolute;
   display: flex; /* to allow contained divs to move freely*/
-  background-color: grey;
+  overflow: hidden;
+}
 
+.profileText h2{
+  font-size: 100%;
+  position: relative;
+}
+
+.contactArea {
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  display: flex; /* to allow contained divs to move freely*/
+}
+
+.contact-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-items a {
+  align-items: center;
+  text-decoration: none;
+  background-color: #1D215B;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px 10px 10px 10px;
+  margin: 5%;
+}
+
+.contact-items a:hover {
+    color: #1D215B;
+    background-color: white;
+}
+
+input {
+  font-family: 'Quicksand', sans-serif;
+  border: none;
+  width: 100%;
+  height: 30px;
+  margin: 5%;
+  padding: 5%;
+}
+
+/* textarea {
+ font-family: 'Quicksand', sans-serif;
+ height: 50px;
+ width: 150px;
+ border: none;
+ padding: 10%;
+ margin: 10%;
+ resize: vertical;
+} */
+
+.socialMedia {
+  justify-content: center;
+  top: 30%;
+  right: 0%;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  display: flex; /* to allow contained divs to move freely*/
+}
+
+ .socialMedia img {
+  width: 30px;
+  padding: 10px;
+  display: flex;
+  z-index: 1;
+}
+
+.socialMedia img:hover{
+  filter: invert(100%);
+  cursor: pointer;
 }
 
 .part2 {
