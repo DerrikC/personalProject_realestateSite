@@ -5,20 +5,28 @@
 
 /* body content */
 body {
-  background-color: purple;
+  background-color: lightgrey;
   font-family: futura, sans-serif;
 }
 /* body content */
 
  main {
-   justify-content: center;
+   width: 100%;
+   justify-content: space-around;
+   display: grid;    /* centers content */
  }
 /* navigation */
 nav {
   width: 100%;
-  height: 50px;
+  height: 70px;
   color: white;
   background-color: #1D215B;
+  justify-content: space-around;
+}
+
+.nav-bar {
+  float: right;
+  padding: 10px;
 }
 
 ul {
@@ -37,26 +45,44 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  justify-content: right;
 }
 
 li a:hover {
-  background-color: #111;
+  cursor: pointer;
+}
+
+img li a:hover {
+  cursor: pointer;
+}
+
+.logo {
+  padding: 10px;
+  width: 120px;
+  height: 45px;
+}
+
+.logo a{
+  padding: 0;
+  width: 120px;
+  height: 65px;
+  padding: 10px;
 }
 /* navigation */
 
 /* top section content */
 #topContent {
-  width: 100%;
+  width: 1080px;
   overflow: hidden;
   display: flex;
-  position: absolute;
+  position: relative;
+  justify-content: center;
 }
 /* top section content */
 
 /*hook image*/
 .hookImage img{
   width: 100%;
-  overflow: hidden;
   display: flex;
   justify-content: space-around;
 }
@@ -95,8 +121,16 @@ li a:hover {
   background-color: white;
   -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.24);
   -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.24);
-  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.24);;
+  box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.24);
 }
+
+.profileImage img {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
 
 .profileText {
   left: 0;
@@ -184,11 +218,18 @@ input {
   filter: invert(100%);
   cursor: pointer;
 }
+ /* middle content*/
+
+ #middleContent {
+   width: 100%;
+  justify-content: space-around;
+  overflow: hidden;
+ }
 
 .part2 {
   height: 720px;
-  width: 100%;
-  background-color: green;
+  width: 1080px;
+  background-color: grey;
 
 }
 
