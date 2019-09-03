@@ -91,7 +91,7 @@ img li a:hover {
 /*hook title*/
 #hookTitle {
   color: white;
-  font-size: 100px;
+  font-size: 60px;
   padding: 50px;
   left: 0;
   display: flex;
@@ -191,10 +191,53 @@ img li a:hover {
     background-color: white;
 }
 
+#textboxBack {
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: black;
+  position: fixed;
+  z-index: 1;
+  display: none;
+  font-size: 50px;
+  text-align: right;
+}
+
+.close{
+  right: 30px;
+  position: absolute;
+  display: flex;
+  margin: 10px;
+  z-index: 1;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+
+.searchWindowBtn {
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  border-radius: 2.5px 2.5px 2.5px 2.5px;
+  margin: 5%;
+  border: #1D215B;
+  border-style: solid;
+}
+
+.searchWindowBtn:hover {
+    color: #1D215B;
+    background-color: white;
+    cursor: pointer;
+    border: white;
+    border-style: solid;
+}
+
 input {
   font-family: 'Quicksand', sans-serif;
   border: none;
-  width: 100%;
+  width: 200px;
   height: 30px;
   margin: 5%;
   padding: 5%;
@@ -224,7 +267,6 @@ input {
   width: 30px;
   padding: 10px;
   display: flex;
-  z-index: 1;
 }
 
 .socialMedia img:hover{
@@ -234,18 +276,42 @@ input {
  /* middle content*/
 
  #middleContent {
-   width: 100%;
-  justify-content: space-around;
+  width: 100%;
   overflow: hidden;
+  justify-content: center;
  }
 
 .part2 {
   height: 720px;
-  width: 1280px;
-  background-color: grey;
-
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
+/*listings*/
+.listTitle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  padding: 15px;
+}
+
+
+ .listing {
+  color: white;
+  background-color: grey;
+  height: 300px;
+  width: 300px;
+  display:inline-grid;
+  margin: 5px;
+  position: relative;
+ }
+
+.listInfo {
+  padding: 20px;
+}
 /* footer */
 footer {
   width: 100%;
